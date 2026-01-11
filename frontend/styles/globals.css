@@ -14,7 +14,7 @@ html, body { padding: 0; margin: 0; background: var(--bg); color: var(--text); f
 a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 
-.container { max-width: 1000px; margin: 0 auto; }
+.container { max-width: 90%; margin: 0 auto; }
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -117,4 +117,57 @@ select,
 option {
   color: #e6e8f0;
   background-color: #151822;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .heroTitle {
+    font-size: 42px;
+  }
+
+  .heroOverlay {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroBanner {
+    height: 300px;
+    border-radius: 18px;
+  }
+
+  .heroTitle {
+    font-size: 28px;
+  }
+
+  .heroText {
+    font-size: 15px;
+  }
+
+  .heroOverlay {
+    padding: 20px;
+  }
+
+  .h1 {
+    font-size: 24px;
+  }
+
+  .h2 {
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .btn,
+  .btnSecondary,
+  .btnDanger {
+    width: 100%;
+    text-align: center;
+  }
 }

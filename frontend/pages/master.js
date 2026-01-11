@@ -91,14 +91,6 @@ function MasterAppointmentsInner() {
                     <span className="muted">—</span>
                   )}
                 </td>
-
-                <td style={{ textAlign: 'right' }}>
-                    {a.status === 'created' ? (
-                      <button className="btnDanger" onClick={() => cancel(a.id)}>Cancel</button>
-                    ) : (
-                      <span className="muted">—</span>
-                    )}
-                  </td>
               </tr>
             );
           })}

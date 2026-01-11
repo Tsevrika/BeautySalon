@@ -21,5 +21,33 @@
 .main { flex: 1; padding: 22px 18px; }
 .footer { border-top: 1px solid var(--border); padding: 18px; color: var(--muted); text-align: center; }
 @media (max-width: 760px) {
-  .header { grid-template-columns: 1fr; }
+  .header {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .auth {
+    justify-content: center;
+  }
+
+  .main {
+    padding: 16px 12px;
+  }
 }
+
+@media (max-width: 420px) {
+  .nav a {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
